@@ -19,7 +19,7 @@ const Category = ({ category, size, setCurrentCategory }) => {
     >
       <Card
         className={`card--bg-${category.color}`}
-        onClick={() => setCurrentCategory(category)}
+        onClick={() => setCurrentCategory(category)} /* !!!!!!!!! fix the bug !!!!!!!!!!!!*/
       >
         <Card.Body className={classNames("text-center", {"d-flex align-items-center justify-content-center p-2" : size === 'sm'})}>
         {/* <Card.Body className= {size === 'sm' ? "text-center d-flex align-items-center justify-content-center p-2" : "text-center"}> */}

@@ -7,11 +7,14 @@ import Category from "./components/Category";
 import questionsArt from './data/art.json';
 import questionsEntertainment from './data/entertainment.json';
 import questionsHistory from './data/history.json';
+import QuestionBox from "./components/QuestionBox";
+
+
 
 function App() {
  const [category, setCategory] = useState(null)
  const [questions, setQuestions] = useState([])
-
+ 
  const setCurrentCategory = (category) => {
       setCategory(category)
 
@@ -47,7 +50,7 @@ function App() {
 
         <Row className="d-flex justify-content-center">
           <Col md={4} className="text-center">
-             Questions...
+             <QuestionBox questions={questions} />
           </Col>
         </Row>
       </>

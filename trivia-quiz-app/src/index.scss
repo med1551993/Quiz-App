@@ -21,3 +21,26 @@ h1{
         border-color: #f08d76 !important;
     }
 }
+
+.list-group {
+    &:not(.disabled) {
+        .list-group-item:hover {
+            background: #1c6ea4;
+            color: #ffffff;
+        }
+    }
+
+    &-item {
+        cursor: pointer;
+
+        &.correct {
+            background-color: #68d388;
+            color: #ffffff;
+        }
+
+        &.incorrect {
+            background-color: #ff0028;
+            color: #ffffff;
+        }
+    }
+}
